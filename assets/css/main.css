@@ -208,7 +208,7 @@ h6 {
   width: 160px;
   height: 160px;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   border: 8px solid color-mix(in srgb, var(--contrast-color), transparent 85%);
 }
 
