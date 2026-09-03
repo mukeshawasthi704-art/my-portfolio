@@ -905,10 +905,12 @@ section,
 }
 
 .about .profile-image-wrapper .signature-section .signature {
-  max-width: 200px;
-  height: auto;
-  margin-bottom: 15px;
-  opacity: 0.8;
+  margin: 0 0 10px;
+  font-family: "Brush Script MT", "Segoe Script", cursive;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--heading-color);
 }
 
 .about .profile-image-wrapper .signature-section .quote {
@@ -3179,3 +3181,4 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
