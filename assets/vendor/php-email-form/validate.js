@@ -72,6 +72,8 @@
       }
 
       if (data.trim() == 'OK' || (formSubmitResponse && (formSubmitResponse.success === true || formSubmitResponse.success === 'true'))) {
+        thisForm.querySelector('.error-message').classList.remove('d-block');
+        thisForm.querySelector('.sent-message').textContent = 'The form was submitted successfully.';
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
