@@ -71,7 +71,8 @@
         formSubmitResponse = null;
       }
 
-      if (data.trim() == 'OK' || (formSubmitResponse && (formSubmitResponse.success === true || formSubmitResponse.success === 'true'))) {
+      const formSubmitSucceeded = formSubmitResponse && String(formSubmitResponse.success).toLowerCase() === 'true';
+      if (data.trim() == 'OK' || formSubmitSucceeded || /"success"\s*:\s*(true|"true")/i.test(data)) {
         thisForm.querySelector('.error-message').classList.remove('d-block');
         thisForm.querySelector('.sent-message').textContent = 'The form was submitted successfully.';
         thisForm.querySelector('.sent-message').classList.add('d-block');
