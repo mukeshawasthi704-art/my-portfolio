@@ -7,7 +7,7 @@
   */
 
   // Contact-form messages are sent to this address.
-  $receiving_email_address = 'mukeshawasthi704@gmail.com';
+  $receiving_email_address = 'mukesh8ddl@gmail.com';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
